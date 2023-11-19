@@ -6,7 +6,7 @@ import CourseCard from "@/components/courseCard";
 import PractiseCard from "./components/practiseCard";
 import SmallTitle from "@/components/smallTitle";
 import PlanCard from "../../components/planCard";
-import Calendar from "./components/Calendar";
+import Calendar from "./components/calendar";
 import DetailedBtn from "@/components/detailedBtn";
 import NewCourseCard from "./components/newCourseCard";
 
