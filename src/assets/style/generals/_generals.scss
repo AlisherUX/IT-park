@@ -84,6 +84,17 @@ body {
   color: $blue;
 }
 
+:where(.css-byeoj0).ant-progress.ant-progress-status-success .ant-progress-bg {
+  background-color: $darkBlue;
+}
+
+:where(.css-byeoj0).ant-progress .ant-progress-success-bg, :where(.css-byeoj0).ant-progress .ant-progress-bg {
+  position: relative;
+  background-color: $blue;
+  border-radius: 100px;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
