@@ -1,0 +1,45 @@
+.homework {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 47px;
+
+  &-text {
+    max-width: 843px;
+    width: 100%;
+    color: $darkBlue;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &-install {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 25px;
+    max-width: 464px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid $gray;
+
+    &__left {
+      display: flex;
+      gap: 21px;
+
+      &-text {
+        color: $deepPurple;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    &__btn {
+      padding: 6px 12px;
+      border-radius: 10px;
+      background-color: $blue;
+      color: $white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

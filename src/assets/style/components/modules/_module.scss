@@ -1,0 +1,49 @@
+.module {
+  width: 710px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid $gray;
+  display: flex;
+  align-items: center;
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modules_page {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.module_title {
+  color: $darkBlue;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.module_task {
+  color: $darkBlue;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.module_text {
+  color: $deepPurple;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.module_info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.module_main {
+  margin-left: 40px;
+  margin-right: auto;
+}

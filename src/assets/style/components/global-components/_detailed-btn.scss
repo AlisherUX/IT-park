@@ -1,0 +1,17 @@
+.detailed__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  color: $darkBlue;
+  padding-block: 18px;
+  border-radius: 16px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #ededed;
+  }
+}

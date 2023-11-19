@@ -1,0 +1,31 @@
+.green_btn {
+  background: $blue;
+  color: $white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: max-content;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: transparent;
+    border: 2px solid $blue;
+  }
+
+  &:hover &:after {
+    top: -1%;
+    left: -1%;
+    right: -1%;
+    bottom: -1%;
+  }
+}

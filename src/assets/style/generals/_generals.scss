@@ -1,0 +1,98 @@
+html,
+body {
+  background: $light;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1485px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.border-yellow {
+  border-left: 17px solid $orange;
+}
+
+.border-dark__blue {
+  border-left: 17px solid $darkBlue;
+}
+
+.border-green {
+  border-left: 17px solid $blue;
+}
+
+.background-dark__blue {
+  background-color: $darkBlue;
+}
+
+.background-green {
+  background-color: $blue;
+}
+
+.background-orange {
+  background-color: $orange;
+}
+
+.color-dark__blue {
+  color: $darkBlue;
+}
+
+.color-green {
+  color: $blue;
+}
+
+.color-orange {
+  color: $orange;
+}
+
+.large-title {
+  font-size: 36px;
+  color: $darkBlue;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+.small-title {
+  font-size: 24px;
+  color: $darkBlue;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.profile__page {
+  width: 100% !important;
+  display: flex;
+  gap: 43px;
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.green-small_text {
+  font-weight: 600;
+  font-size: 14px;
+  color: $blue;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blue;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f4f80;
+}

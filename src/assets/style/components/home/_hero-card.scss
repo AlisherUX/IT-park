@@ -1,0 +1,47 @@
+.hero-card {
+  display: flex;
+  row-gap: 16px;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  margin-block: 40px;
+  border-radius: 16px;
+  background-color: $blue;
+  padding: 43px 196px 37px 52px;
+
+  &__title {
+    width: 100%;
+    color: $white;
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 747px;
+    line-height: 48px;
+  }
+
+  &__text {
+    width: 100%;
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 480px;
+    line-height: 24px;
+  }
+
+  &__book {
+    position: absolute;
+    right: 376px;
+    top: 89px;
+  }
+
+  &__calendar {
+    position: absolute;
+    right: 39px;
+    top: 89px;
+  }
+
+  &__circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

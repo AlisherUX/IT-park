@@ -1,0 +1,33 @@
+.practise-card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 16px;
+  margin-block: 40px 58px;
+  background-color: $white;
+  padding: 32px 32px 56px 32px;
+
+  &__progress {
+    margin-top: 22px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &-subject,
+    &-count {
+      font-size: 14px;
+      font-weight: 600;
+      color: $darkBlue;
+    }
+  
+    &-count {
+      color: $deepPurple;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-progress .ant-progress-inner {
+  background-color: $light;
+}

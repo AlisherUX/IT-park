@@ -1,0 +1,65 @@
+.files {
+  width: 1008px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 47px;
+  row-gap: 47px;
+
+  &__child {
+    padding: 13px 25px;
+    width: 464px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: 1px solid #dbdbdb;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      gap: 21px;
+    }
+
+    &-btn {
+      background-color: $blue;
+      border-radius: 10px;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $white;
+    }
+
+    &-title {
+      color: $deepPurple;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  margin-top: 41px;
+  margin-bottom: 36px;
+  gap: 16px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: $darkBlue;
+  }
+
+  &__btn {
+    display: flex;
+    padding: 7px 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 8px;
+    background: #fec64f;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

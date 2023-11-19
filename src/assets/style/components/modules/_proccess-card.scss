@@ -1,0 +1,51 @@
+.proccess_card {
+  padding: 30px 42px;
+  background-color: $white;
+  border-radius: 20px;
+  max-width: max-content;
+}
+
+.proccess_top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.proccess_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.proccess_title {
+  color: $darkBlue;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.proccess_data {
+  color: $darkBlue;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.proccess_info {
+  position: relative;
+  color: #909090;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.proccess_icon {
+  position: absolute;
+  bottom: 4px;
+  right: -14px;
+}
+
+.ant-progress-line {
+  width: 0%;
+}

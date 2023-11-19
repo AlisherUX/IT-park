@@ -1,0 +1,105 @@
+.pay-card {
+  padding: 24px 24px 24px 43px;
+  background-color: $white;
+  border-radius: 15px;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 40px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    &-title {
+      color: $white;
+      font-size: 22px;
+      font-weight: 500;
+      padding: 6px 20px;
+      border-radius: 20px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: end;
+    gap: 8px;
+
+    &-btn {
+      color: $white;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 8px 47px;
+      border-radius: 16px;
+    }
+
+    &-price {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    &-btn {
+      width: 20%;
+      padding-block: 10px;
+      border-radius: 10px;
+      background-color: $silver;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+}
+
+.arrow-right {
+  width: 20px;
+  height: 20px;
+  transition: 0.5s;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  &-btn {
+    padding: 6px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin-block: 16px;
+}

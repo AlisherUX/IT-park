@@ -1,0 +1,121 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+
+  &-menu {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 74px;
+    background-color: $white;
+    padding: 33px 46px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+    -webkit-box-shadow: 14px 0px 10px -10px #b6b6b61a;
+    -moz-box-shadow: 14px 0px 10px -10px rgba(182, 182, 182, 0.1);
+    box-shadow: 14px 0px 10px -10px rgba(182, 182, 182, 0.1);
+
+    &_list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      &__link {
+        width: 252px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $deepPurple;
+
+        &.hidden {
+          display: none;
+        }
+
+        &.active {
+          color: $white;
+
+          &:hover {
+            background-color: $blue;
+          }
+        }
+
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+
+      a.active {
+        border-radius: 16px;
+        background-color: $blue;
+        color: $white;
+        -webkit-box-shadow: 4px 4px 14px 0px rgba(65, 88, 33, 0.2);
+        -moz-box-shadow: 4px 4px 14px 0px rgba(65, 88, 33, 0.2);
+        box-shadow: 4px 4px 14px 0px rgba(65, 88, 33, 0.2);
+
+        svg {
+          path {
+            fill: $white;
+            stroke: $blue;
+          }
+        }
+        rect {
+          fill: $blue;
+        }
+      }
+    }
+  }
+
+  &-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background-color: $white;
+    -webkit-box-shadow: 0px 14px 10px -10px #b6b6b61a;
+    -moz-box-shadow: 0px 14px 10px -10px rgba(182, 182, 182, 0.1);
+    box-shadow: 0px 14px 10px -10px rgba(182, 182, 182, 0.1);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(17px);
+    -webkit-backdrop-filter: blur(17px);
+
+    &_actions {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+  }
+
+  &-content {
+    width: 100%;
+
+    &_inside {
+      padding-block: 40px;
+    }
+  }
+}
+
+.header__dropdown_label {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 3px;
+  color: $deepPurple;
+}
+
+.danger-label {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 3px;
+  color: #ff8880;
+}

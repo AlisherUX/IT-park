@@ -1,0 +1,56 @@
+.close {
+  position: relative;
+  overflow: hidden;
+  margin-top: 33px;
+  max-width: max-content;
+  background-color: $blue;
+  padding: 24px 81px 40px 40px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  filter: drop-shadow(0px 20px 50px rgba(55, 69, 87, 0.10));
+
+  &-title {
+    max-width: 356px;
+    width: 100%;
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &-btn {
+    max-width: max-content;
+    padding: 10px 56px;
+    border-radius: 8px;
+    background: $white;
+    color: $blue;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &-book__icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  &-calendar__icon {
+    position: absolute;
+    top: 122px;
+    right: 91.37px;
+    transform: rotate(-21.38deg);
+  }
+
+  &-crown__icon {
+    position: absolute;
+    bottom: 28.65px;
+    left: 9px;
+  }
+
+  &-big__crown-icon {
+    position: absolute;
+    top: 23px;
+    right: -35px;
+  }
+}

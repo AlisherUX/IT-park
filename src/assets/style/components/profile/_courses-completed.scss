@@ -1,0 +1,33 @@
+.complete {
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    max-width: 468px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 32px;
+    background-color: $white;
+    border-radius: 24px;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      &-title {
+        color: $darkBlue;
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      &-text {
+        color: $darkBlue;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.week-calendar {
+  padding: 32px;
+  border-radius: 16px;
+  background-color: $white;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-bottom: 40px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &__wrapper {
+    max-width: 428px;
+    width: 100%;
+  }
+
+  &__times {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+    &-time {
+      color: $deepPurple;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &__weeks {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  &__week {
+    color: $deepPurple;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+      content: "- - - - - - - - - - - - - - -";
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      color: $deepPurple;
+      letter-spacing: 5px;
+    }
+
+    &.active {
+      color: $darkBlue;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &__modal {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 14px;                                                
+    border-radius: 8px;
+    gap: 8px;
+
+    &-title {
+      color: $white;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    &-circle {
+      background-color: $white;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.monday-900,
+.monday-1100,
+.monday-1400,
+.monday-1600,
+.monday-1800 {
+  top: -12px;
+}
+
+.tuesday-900,
+.tuesday-1100,
+.tuesday-1400,
+.tuesday-1600,
+.tuesday-1800 {
+  top: 38px;
+}
+
+.thursday-900,
+.thursday-1100,
+.thursday-1400,
+.thursday-1600,
+.thursday-1800 {
+  top: 88px;
+}
+
+.wednesday-900,
+.wednesday-1100,
+.wednesday-1400,
+.wednesday-1600,
+.wednesday-1800 {
+  top: 142px;
+}
+
+.friday-900,
+.friday-1100,
+.friday-1400,
+.friday-1600,
+.friday-1800 {
+  top: 198px;
+}
+
+.saturday-900,
+.saturday-1100,
+.saturday-1400,
+.saturday-1600,
+.saturday-1800 {
+  top: 248px;
+}
+
+.sunday-900,
+.sunday-1100,
+.sunday-1400,
+.sunday-1600,
+.sunday-1800 {
+  top: 302px;
+}
+
+.monday-900,
+.tuesday-900,
+.thursday-900,
+.wednesday-900,
+.friday-900,
+.sunday-900,
+.saturday-900 {
+  left: 65px;
+}
+
+.monday-1100,
+.tuesday-1100,
+.thursday-1100,
+.wednesday-1100,
+.friday-1100,
+.sunday-1100,
+.saturday-1100 {
+  left: 130px;
+}
+
+.monday-1400,
+.tuesday-1400,
+.thursday-1400,
+.wednesday-1400,
+.friday-1400,
+.sunday-1400,
+.saturday-1400 {
+  left: 196px;
+}
+
+.monday-1600,
+.tuesday-1600,
+.thursday-1600,
+.wednesday-1600,
+.friday-1600,
+.sunday-1600,
+.saturday-1600 {
+  left: 262px;
+}
+
+.monday-1800,
+.tuesday-1800,
+.thursday-1800,
+.wednesday-1800,
+.friday-1800,
+.sunday-1800,
+.saturday-1800 {
+  left: 330px;
+}

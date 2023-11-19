@@ -1,0 +1,95 @@
+.course-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 24px;
+  background-color: $blue;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-block: 24px 56px;
+  }
+
+  &__bg-img {
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+  }
+
+  &__main-entry {
+    font-size: 24px;
+    color: $darkBlue;
+    font-weight: 600;
+    line-height: 36px;
+    border-radius: 10px;
+    padding-inline: 13px;
+    max-width: max-content;
+    background-color: $white;
+  }
+
+  &__info {
+    display: flex;
+    gap: 56px;
+    margin-block: 20px 26px;
+
+    &-date,
+    &-teacher {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: $white;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+  }
+
+  &__informant {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 12px 10px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+
+  &__link {
+    color: $blue;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-progress-line {
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+}
+:where(.css-dev-only-do-not-override-byeoj0).ant-progress .ant-progress-bg {
+  border-radius: 5px;
+  background-color: $blue;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-progress .ant-progress-inner {
+  border-radius: 5px;
+  background-color: $white;
+  border: 1px solid $white;
+}
+
+:where(
+    .css-dev-only-do-not-override-byeoj0
+  ).ant-progress.ant-progress-status-success
+  .ant-progress-bg {
+  background-color: $darkBlue;
+}

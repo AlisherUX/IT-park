@@ -1,0 +1,89 @@
+.video-container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-player {
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 13px 10px rgba(34, 60, 80, 0.05);
+  -moz-box-shadow: 0px 0px 13px 10px rgba(34, 60, 80, 0.05);
+  box-shadow: 0px 0px 13px 10px rgba(34, 60, 80, 0.05);
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  bottom: 6px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  transition: 1s;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+
+.control-button {
+  padding-inline: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.progress-bar-container {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 25px 15px 25px;
+  transition: 1s;
+}
+
+.progress-bar {
+  width: 960px;
+  height: 8px;
+  background-color: $gray;
+  border-radius: 4px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: $blue;
+  border-radius: 4px;
+}
+
+.time-indicators {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-slash {
+  margin-inline: 4px;
+  font-size: 14px;
+  color: $white;
+}
+
+.current-time,
+.duration {
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: $white;
+}

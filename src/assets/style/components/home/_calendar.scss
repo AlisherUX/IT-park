@@ -1,0 +1,121 @@
+.calendar {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  background-color: $white;
+  border-radius: 16px;
+  padding-block: 32px 10px;
+  padding-inline: 62px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__month-year {
+      color: $darkBlue;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &__swipe-button {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: $silver;
+      }
+    }
+  }
+
+  &-week:nth-child(7) {
+    color: #ffa69a;
+  }
+
+  &-weekdays {
+    display: flex;
+    justify-content: space-around;
+    gap: 6px;
+    margin-block: 16px 12px;
+    color: $deepPurple;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 11px;
+    row-gap: 7px;
+    margin-bottom: 10px;
+  }
+
+  &-day {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: $darkBlue;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray;
+    }
+
+    &.prev-month,
+    &.next-month {
+      color: $deepPurple;
+    }
+
+    &.next-month:nth-last-child(1) {
+      color: #ffa69a;
+    }
+
+    &.prev-month:nth-child(7) {
+      color: #ffa69a;
+    }
+
+    &.sunday {
+      color: $red;
+    }
+
+    &.today {
+      background-color: $blue;
+      color: $white;
+    }
+
+    &.marked {
+      background-color: $blue;
+      color: $white;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        right: -3px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 2px solid $white;
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.next-arrow {
+  transform: rotateZ(180deg);
+}

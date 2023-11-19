@@ -1,0 +1,28 @@
+.tab__con {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tab__body {
+  border-radius: 16px;
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  color: $darkBlue;
+  
+  &.active {
+    padding: 20px 25px !important;
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.tab__inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

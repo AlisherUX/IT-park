@@ -1,0 +1,69 @@
+.circle {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &-title {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      color: $blue;
+      font-weight: 400;
+      gap: 8px;
+    }
+  }
+
+  &-progress {
+    display: flex;
+    width: 100%;
+    gap: 38px;
+
+    &__group {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      padding: 32px 78px 32px 32px;
+      background-color: $white;
+      border-radius: 16px;
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      &-courses,
+      &-text {
+        font-size: 14px;
+        font-weight: 400;
+        color: $deepPurple;
+      }
+
+      &-count,
+      &-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: $darkBlue;
+      }
+    }
+  }
+}
+
+// Progress style
+:where(.css-dev-only-do-not-override-byeoj0).ant-progress
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+  .ant-progress-circle-path {
+  stroke: $blue;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-progress.ant-progress-circle
+  .ant-progress-text {
+  color: #374557;
+  line-height: 1;
+  font-size: 24px;
+  font-weight: 700;
+}

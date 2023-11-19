@@ -1,0 +1,35 @@
+.tab {
+  display: flex;
+  padding-top: 24px;
+
+  &-box__btn {
+    position: absolute;
+    top: 810px;
+    left: 878px;
+    background-color: $blue;
+    border-radius: 6px;
+    padding: 13px 24px;
+    width: 152px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $white;
+  }
+
+  &__title {
+    color: $darkBlue;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 67px;
+  }
+}
+
+.ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #f0f0f0;
+  max-width: 369px;
+}
