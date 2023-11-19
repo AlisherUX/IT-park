@@ -1,10 +1,10 @@
 import BigCalendar from "./components/bigCalendar";
-import WeekCalendar from "./components/WeekCalendar";
 import SmallTitle from "@/components/smallTitle";
 import PlanCard from "@/components/planCard";
 import CourseCard from "@/components/courseCard";
 import DetailedBtn from "@/components/detailedBtn";
 import CrudCard from "@/components/crudCard";
+import WeekCalendar from "./components/weekCalendar";
 
 const LessonTable = () => {
   return (
